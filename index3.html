@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title> Vue Basics</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <style>
+            .one{
+                color: rgb(216, 25, 175);
+            }
+        
+        </style>
+
+    </head>
+
+    <body>
+            <h1>Vue Basics</h1>
+            <div id="app">
+                <h2> {{ title }}</h2>
+                <p>My name is {{ name }} </p>
+                <!-- <input type="text" @keyup="updateName">
+                <input type="text" @keypress="updateName"> -->
+                <input type="text" v-model="name"> <!--two way data binding in vue -->
+                <p class="one" >My name is {{ name }} </p>
+
+            </div>
+
+
+  
+    <script src="app3.js"></script>    
+    </body>
+</html>
